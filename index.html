@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>알라딘 중고서점</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/index.js"></script>
 </head>
 <body>
     <div id="web-banner">
@@ -21,15 +22,19 @@
                 <h1 class="logo"><a href="#">알라딘</a></h1>
                 <p class="all-menu"><a href="#gnb">전체메뉴</a></p>
             </div>
+            <div class="header-center">
+                <input type="text" name="search-bar" id="search-bar-1" placeholder="제목,저자,출판사 검색"><label for="search-bar-1">검색창</label>
+            </div>
             <div class="header-right">
-                <p class="search-bar"><a href="#">검색창</a></p>
+                <button class="login">로그인</button>    
+                <button class="sign-up">회원가입</button>    
             </div>
             <ul class="util-menu">
-                <li class="login"><a href="#"><img src="images/ut-ico-login.png" alt="login"></a></li>
-                <li class="sign-in"><a href="#"><img src="images/ut-ico-up.png" alt="signup"></a></li>
-                <li class="mypage"><a href="#"><img src="images/ut-ico-pro.png" alt="mypage"></a></li>
-                <li class="service"><a href="#"><img src="images/ut-ico-ser.png" alt="service"></a></li>
-                <li class="cart"><a href="#"><img src="images/ut-ico-cart.png" alt="cart"></a></li>
+                <li class="service"><a href="#"><img src="images/ut-ico-home.png" alt="home">홈</a></li>
+                <li class="cart"><a href="#"><img src="images/ut-ico-not.png" alt="notice">알림</a></li>
+                <li class="cart"><a href="#"><img src="images/ut-ico-cart.png" alt="cart">장바구니</a></li>
+                <li class="mypage"><a href="#"><img src="images/ut-ico-pro.png" alt="mypage">마이페이지</a></li>
+                <li class="service"><a href="#"><img src="images/ut-ico-ser.png" alt="service">고객센터</a></li>
             </ul>
             <div class="gnb-wrap">
                 <div class="gnb">
@@ -92,10 +97,8 @@
             </div>
         </header>
         <div id="container">
-            <p class="catch-phrase">"좋은 책을 고르는 방법, 알라딘!"</p>
             <section class="sec-1">
                 <div class="slide-banner-wrap">
-                    <input type="radio" name="slide-page" id="slide-page-1-1" checked><label for="slide-page-1-1" class="slide-p-1">신간소개</label>
                     <div>
                         <button class="btn-slide-prev"></button><button class="btn-slide-next"></button>
                         <ul>
@@ -106,7 +109,6 @@
                         </ul>
     
                     </div>
-                    <input type="radio" name="slide-page" id="slide-page-1-2"><label for="slide-page-1-2" class="slide-p-2">편집장의 선택</label>
                     <div>
                         <button class="btn-slide-prev"></button><button class="btn-slide-next"></button>
                         <ul>
@@ -117,7 +119,6 @@
                         </ul>
     
                     </div>
-                    <input type="radio" name="slide-page" id="slide-page-1-3"><label for="slide-page-1-3" class="slide-p-3">추천 이벤트</label>
                     <div>
                         <button class="btn-slide-prev"></button><button class="btn-slide-next"></button>
                         <ul>
@@ -128,7 +129,6 @@
                         </ul>
     
                     </div>
-                    <input type="radio" name="slide-page" id="slide-page-1-4"><label for="slide-page-1-4" class="slide-p-4">이주의 책</label>
                     <div>
                         <button class="btn-slide-prev"></button><button class="btn-slide-next"></button>
                         <ul>
@@ -139,7 +139,6 @@
                         </ul>
     
                     </div>
-                    <input type="radio" name="slide-page" id="slide-page-1-5"><label for="slide-page-1-5" class="slide-p-5">이벤트 도서</label>
                     <div>
                         <button class="btn-slide-prev"></button><button class="btn-slide-next"></button>
                         <ul>
@@ -150,7 +149,6 @@
                         </ul>
     
                     </div>
-                    <input type="radio" name="slide-page" id="slide-page-1-6"><label for="slide-page-1-6" class="slide-p-6">화제의 책</label>
                     <div>
                         <button class="btn-slide-prev"></button><button class="btn-slide-next"></button>
                         <ul>
@@ -161,7 +159,6 @@
                         </ul>
     
                     </div>
-                    <input type="radio" name="slide-page" id="slide-page-1-7"><label for="slide-page-1-7" class="slide-p-7">이벤트 굿즈</label>
                     <div>
                         <button class="btn-slide-prev"></button><button class="btn-slide-next"></button>
                         <ul>
@@ -172,7 +169,6 @@
                         </ul>
     
                     </div>
-                    <input type="radio" name="slide-page" id="slide-page-1-8"><label for="slide-page-1-8" class="slide-p-8">눈에 띄는 책</label>
                     <div>
                         <button class="btn-slide-prev"></button><button class="btn-slide-next"></button>
                         <ul>
@@ -182,7 +178,6 @@
                             <li><a href="#"><dl><dt><p><img src="images/8934986654_1.jpg" alt=""></p></dt><dd><p class="book-tit"><span class="p-choice-1"></span><span class="author-pub"></span></p></dd></dl></a></li>
                         </ul>
                     </div>
-                    <input type="radio" name="slide-page" id="slide-page-1-9"><label for="slide-page-1-9" class="slide-p-9">EBOOK</label>
                     <div>
                         <button class="btn-slide-prev"></button><button class="btn-slide-next"></button>
                         <ul>
@@ -194,53 +189,57 @@
                     </div>
                     <ul>
                         <!-- <li class="on"><a href="#"></a></li> -->
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                        <li><a href="#" class="on" onclick="bannerMenu(this,0);">신간 소개</a></li>
+                        <li><a href="#" onclick="bannerMenu(this,1);">편집장의 선택</a></li>
+                        <li><a href="#" onclick="bannerMenu(this,2);">추천 이벤트</a></li>
+                        <li><a href="#" onclick="bannerMenu(this,3);">이 주의 책</a></li>
+                        <li><a href="#" onclick="bannerMenu(this,4);">이벤트 도서</a></li>
+                        <li><a href="#" onclick="bannerMenu(this,5);">화제의 책</a></li>
+                        <li><a href="#" onclick="bannerMenu(this,6);">이벤트 굿즈</a></li>
+                        <li><a href="#" onclick="bannerMenu(this,7);">눈의 띄는 새책</a></li>
+                        <li><a href="#" onclick="bannerMenu(this,8);">EBOOK</a></li>
                     </ul>
                 </div>
             </section>
             <section class="sec-2">
-                <h2>ALADIN KEYWORDS</h2>
-                <p>키워드로 분류된 다양한  책/DVD/음반</p>
-                <table>
-                    <tr>
-                        <td><a href="#">지구한바퀴 세계여행</a></td>
-                        <td><a href="#">만화/웹툰</a></td>
-                        <td><a href="#">시사/이슈</a></td>
-                        <td><a href="#">IT 트랜드</a></td>
-                        <td><a href="#">패션/잡지</a></td>
-                        <td><a href="#">취향저격 장르소설</a></td>
-                        <td><a href="#">오늘은 이런책</a></td>
-                        <td><a href="#">글쓰기 코치</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">직장인 현실조언</a></td>
-                        <td><a href="#">스타트업</a></td>
-                        <td><a href="#">육아 이야기</a></td>
-                        <td><a href="#">요리/레시피</a></td>
-                        <td><a href="#">건강/운동</a></td>
-                        <td><a href="#">멘탈/힐링 심리 탐구</a></td>
-                        <td><a href="#">건축/설계</a></td>
-                        <td><a href="#">인문학/철학</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">쉽게 읽는 역사</a></td>
-                        <td><a href="#">홈/반려동물</a></td>
-                        <td><a href="#">멋진 캘라그라피</a></td>
-                        <td><a href="#">사랑/이별</a></td>
-                        <td><a href="#">감성 에세이</a></td>
-                        <td><a href="#">뮤직 인사이드</a></td>
-                        <td><a href="#">오늘은 이 영화!</a></td>
-                        <td><a href="#">문화/예술</a></td>
-                    </tr>
-                </table>
+                <div class="keyword">
+                    <h2>ALADIN KEYWORDS</h2>
+                    <p>키워드로 분류된 다양한  책/DVD/음반</p>
+                    <div class="table-wrap">
+                        <table>
+                            <tr>
+                                <td><a href="#">지구한바퀴 세계여행</a></td>
+                                <td><a href="#">만화/웹툰</a></td>
+                                <td><a href="#">시사/이슈</a></td>
+                                <td><a href="#">IT 트랜드</a></td>
+                                <td><a href="#">패션/잡지</a></td>
+                                <td><a href="#">취향저격 장르소설</a></td>
+                                <td><a href="#">오늘은 이런책</a></td>
+                                <td><a href="#">글쓰기 코치</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">직장인 현실조언</a></td>
+                                <td><a href="#">스타트업</a></td>
+                                <td><a href="#">육아 이야기</a></td>
+                                <td><a href="#">요리/레시피</a></td>
+                                <td><a href="#">건강/운동</a></td>
+                                <td><a href="#">멘탈/힐링 심리 탐구</a></td>
+                                <td><a href="#">건축/설계</a></td>
+                                <td><a href="#">인문학/철학</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">쉽게 읽는 역사</a></td>
+                                <td><a href="#">홈/반려동물</a></td>
+                                <td><a href="#">멋진 캘라그라피</a></td>
+                                <td><a href="#">사랑/이별</a></td>
+                                <td><a href="#">감성 에세이</a></td>
+                                <td><a href="#">뮤직 인사이드</a></td>
+                                <td><a href="#">오늘은 이 영화!</a></td>
+                                <td><a href="#">문화/예술</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </section>
             <section class="sec-3">
                 <h2>BEST SELLER</h2>
