@@ -1,7 +1,25 @@
 @charset "utf-8";
 @import url('../css/reset.css');
 @import 'design';
-
+.book-tit {
+  font-size: 16px;
+  font-weight: bold;
+}
+.p-choice-1 {
+  font-size: 14px;
+  display: block;
+  font-weight: normal;
+}
+.author-pub {
+  font-size: 14px;
+  display: block;
+  font-weight: normal;
+}
+.sec-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
 body {
   max-width: 100%;
   font: 14px/1.4 Malgun Gothic, '맑은고딕', AppleGothic, gulim, '굴림', dotum,
@@ -97,46 +115,180 @@ body {
     }
   }
   .gnb-wrap {
-    position: absolute;
-    top: 90px;
-    left: 0;
-    width: $width-1;
-    height: 300px;
-    background-color: #fff;
-    z-index: 5;
-    display: block;
-    border: 1px solid #000;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    border: 1px solid $mainColor-1;
+    display: none;
     .gnb {
-      width: 100%;
       > ul {
-        overflow-y: auto;
+        position: relative;
+        width: 500px;
+        height: 100%;
+        padding: 30px;
         > li {
-          font-size: 20px;
-          ul {
-            width: 50%;
+          margin-bottom: 10px;
+          a {
+            font-size: 20px;
+            font-weight: bold;
+          }
+          .sub-menu {
             position: absolute;
             top: 0;
-            left: 30%;
-            li {
-              font-size: 16px;
-              ul {
-                position: absolute;
-                top: 0;
-                left: 40%;
-                li {
-                  font-size: 14px;
+            left: 300px;
+            width: 530px;
+            height: 300px;
+            padding: 30px;
+            overflow-y: auto;
+            ul {
+              li {
+                margin-bottom: 10px;
+                a {
+                  font-size: 16px;
+                  font-weight: normal;
                 }
               }
             }
+            .sub-menu-2 {
+              position: absolute;
+              width: 200px;
+              top: 0;
+              left: 150px;
+              padding: 30px;
+            }
           }
+        }
+      }
+    }
+    .btn-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      a {
+        display: block;
+        text-indent: -9999px;
+        &::before {
+          position: absolute;
+          top: 0;
+          left: -10px;
+          content: '';
+          display: block;
+          width: 1px;
+          height: 29px;
+          background-color: #000;
+          transform: rotate(45deg);
+        }
+        &::after {
+          position: absolute;
+          top: 0;
+          left: -10px;
+          content: '';
+          display: block;
+          width: 1px;
+          height: 29px;
+          background-color: #000;
+          transform: rotate(-45deg);
         }
       }
     }
   }
 }
 #container {
-  display: none;
+  *[class*='sec-'] {
+    margin-top: 30px;
+  }
+  .sec-1 {
+    background-color: $mainColor-2;
+    .slide-banner-wrap {
+      div {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        & ~ div {
+          display: none;
+        }
+        ul {
+          overflow: hidden;
+          padding-top: 10px;
+          li {
+            width: 33.3%;
+            height: 100%;
+            float: left;
+            text-align: center;
+          }
+        }
+        .btn-slide-prev {
+          position: absolute;
+          top: 40%;
+          left: 30%;
+          border: none;
+          width: 80px;
+          height: 80px;
+          background: url('../images/btn-slide-prev.png') no-repeat 0 0;
+        }
+        .btn-slide-next {
+          position: absolute;
+          top: 40%;
+          right: 30%;
+          border: none;
+          width: 80px;
+          height: 80px;
+          background: url('../images/btn-slide-next.png') no-repeat 0 0;
+        }
+      }
+      > ul {
+        margin-top: 10px;
+        text-align: center;
+        li {
+          display: inline-block;
+          width: 10%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .sec-2 {
+    .keyword {
+      h2 {
+        span {
+          display: block;
+          font-size: 16px;
+        }
+      }
+    }
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      .table-list {
+        width: 960px;
+        height: 363px;
+        margin: 46px auto 0;
+        position: relative;
+        a {
+          position: absolute;
+          display: block;
+          width: 119px;
+          height: 119px;
+          text-align: center;
+          border: 1px solid #eee;
+          font-size: 14px;
+          line-height: 18px;
+          span {
+            display: block;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+  .sec-3 {
+    .best-seller-wrap {
+    }
+  }
 }
+
 #footer {
   display: none;
 }
