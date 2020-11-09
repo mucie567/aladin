@@ -21,7 +21,6 @@
   text-align: center;
 }
 body {
-  max-width: 100%;
   font: 14px/1.4 Malgun Gothic, '맑은고딕', AppleGothic, gulim, '굴림', dotum,
     '돋움', sans-serif;
 }
@@ -41,10 +40,6 @@ body {
       }
     }
   }
-}
-#wrap-aladin {
-  max-width: $width-1;
-  margin: 0 auto;
 }
 #header {
   position: relative;
@@ -284,11 +279,193 @@ body {
     }
   }
   .sec-3 {
-    .best-seller-wrap {
+    .time-book {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 96px;
+      height: 30px;
+      border: 1px solid #000;
+      border-radius: 5px;
+      line-height: 30px;
+      text-align: center;
+      background-color: $mainColor-2;
+    }
+    .best-seller-now-wrap {
+      width: 100%;
+      overflow-x: auto;
+      .best-now {
+        margin-top: 50px;
+        ul {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          row-gap: 20px;
+          column-gap: 20px;
+          li {
+            justify-self: start;
+            position: relative;
+            .rank {
+              position: absolute;
+              top: 20px;
+              left: 70px;
+            }
+            a {
+              display: block;
+              img {
+                width: 50px;
+                min-height: 71px;
+                margin-right: 50px;
+              }
+              p {
+                display: inline-block;
+                position: relative;
+                top: 10px;
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec-4 {
+    width: 100%;
+    .aladin-tv-wrap {
+      width: 960px;
+      margin: 50px auto 0;
+      .main {
+        position: relative;
+        height: 500px;
+        li {
+          position: absolute;
+          top: 0;
+          left: 0;
+          iframe {
+            width: 960px;
+            height: 500px;
+          }
+        }
+      }
+      .map-image {
+        ul {
+          overflow: hidden;
+          li {
+            float: left;
+            span {
+              display: block;
+              text-align: center;
+            }
+            iframe {
+              width: 240px;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sec-5 {
+    h2 {
+      &::after {
+        display: block;
+        content: '';
+        max-width: 1080px;
+        height: 1px;
+        background-color: #000;
+        margin: 20px 0;
+      }
+    }
+    > ul {
+      text-align: center;
+      > li {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 16px;
+        margin-right: 20px;
+        ul {
+          margin-top: 20px;
+          font-size: 14px;
+          li {
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+    .notice {
+      width: 100%;
+      height: 60px;
+      line-height: 40px;
+      padding: 10px;
+      position: relative;
+      font-size: 16px;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      h3 {
+        float: left;
+        &::after {
+          content: '';
+          display: block;
+          width: 1px;
+          height: 21px;
+          background-color: #000;
+          position: absolute;
+          top: 20px;
+          left: 81px;
+        }
+      }
+      ul {
+        float: left;
+        margin-left: 20px;
+        li {
+          & ~ li {
+            display: none;
+          }
+        }
+      }
+      button {
+        position: absolute;
+        right: 0;
+        text-indent: -99999px;
+        width: 15px;
+        height: 15px;
+      }
+      .btn-notice-prev {
+        top: 15px;
+        background: url('../images/btn_notice_1.png') no-repeat 0 0;
+        background-size: contain;
+      }
+      .btn-notice-next {
+        top: 30px;
+        background: url('../images/btn_notice_2.png') no-repeat 0 0;
+        background-size: contain;
+      }
     }
   }
 }
-
+#bg-footer {
+  margin-top: 50px;
+  width: 100%;
+  background: $footerColor-1;
+}
 #footer {
-  display: none;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: hidden;
+  ul {
+    text-align: center;
+    margin-bottom: 20px;
+    li {
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+  .footer-left {
+    float: left;
+    .company-info {
+    }
+  }
+  .footer-right {
+    float: right;
+  }
 }
