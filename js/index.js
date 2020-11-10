@@ -31,7 +31,7 @@ function autoAddNum() {
 
 
 
-function bannerMenu(paging,num) {
+function bannerMenu(paging,num1) {
     console.log(paging);
     var arr = paging.className.split('');
     if(arr.indexOf('on')<0){
@@ -40,13 +40,13 @@ function bannerMenu(paging,num) {
         paging.classList.add('on');
     }
     var arrDiv = document.querySelectorAll('.slide-banner-wrap > .paged');
-    var num =0;
+    var num1 =0;
     for (var i = 0; i < arrDiv.length; i++) {
         arrDiv[i].style.height=0;
         arrDiv[i].style.overflow='hidden';
     }
-    arrDiv[num].style.height='auto';
-    console.log(arrDiv[num])
+    arrDiv[num1].style.height='auto';
+    console.log(arrDiv[num1s])
 }
 
 
