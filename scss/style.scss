@@ -243,45 +243,55 @@ body {
       position: relative;
       width: 100%;
       height: 440px;
-      .bx-prev {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        display: block;
-        margin-top: -65px;
-        width: 80px;
-        height: 80px;
-        background: url('../images/btn-slide-prev.png') no-repeat 0 0;
-        text-indent: -9999px;
-        z-index: 5;
-      }
-      .bx-next {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        margin-top: -65px;
-        width: 80px;
-        height: 80px;
-        background: url('../images/btn-slide-next.png') no-repeat 0 0;
-        text-indent: -9999px;
-        z-index: 5;
-      }
-      .bx-pager {
-        text-align: center;
-        padding-top: 30px;
-        z-index: 5;
-        .bx-pager-item {
-          display: inline-block;
-          padding: 0 22px;
-          .bx-pager-link {
+      .paged {
+        height: 0;
+        overflow: hidden;
+        div {
+          &:nth-child(1) {
+            height: auto;
+            overflow: hidden;
+          }
+        }
+        .bx-prev {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          display: block;
+          margin-top: -65px;
+          width: 80px;
+          height: 80px;
+          background: url('../images/btn-slide-prev.png') no-repeat 0 0;
+          text-indent: -9999px;
+          z-index: 5;
+        }
+        .bx-next {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          margin-top: -65px;
+          width: 80px;
+          height: 80px;
+          background: url('../images/btn-slide-next.png') no-repeat 0 0;
+          text-indent: -9999px;
+          z-index: 5;
+        }
+        .bx-pager {
+          text-align: center;
+          padding-top: 30px;
+          z-index: 5;
+          .bx-pager-item {
             display: inline-block;
-            width: 20px;
-            height: 20px;
-            background-color: $mainColor-2;
-            border-radius: 10px;
-            text-indent: -9999px;
-            &.active {
-              background-color: $mainColor-1;
+            padding: 0 22px;
+            .bx-pager-link {
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              background-color: $mainColor-2;
+              border-radius: 10px;
+              text-indent: -9999px;
+              &.active {
+                background-color: $mainColor-1;
+              }
             }
           }
         }
@@ -426,21 +436,31 @@ body {
             position: absolute;
             top: 0;
             left: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease-in;
             width: 100%;
             height: 100%;
+            &.on {
+              opacity: 1;
+              z-index: 5;
+            }
           }
         }
       }
       .map-image {
+        margin-top: 20px;
         ul {
           width: 100%;
-          overflow: hidden;
+          display: flex;
+          justify-content: space-around;
           li {
-            float: left;
-            width: 25%;
+            width: 20%;
             span {
               display: block;
               text-align: center;
+              font-size: 16px;
+              margin-bottom: 10px;
+              color: $footerColor-1;
             }
           }
         }
