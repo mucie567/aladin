@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,OAAO,CAAC,uBAAI,CAEZ,AACE,eADa,CACb,eAAe,AAAC,CACd,MAAM,CAAE,cAAc,CACvB",
+    "sources": [
+        "../scss/goods.scss",
+        "../scss/design.scss"
+    ],
+    "names": [],
+    "file": "goods.min.css"
+}
