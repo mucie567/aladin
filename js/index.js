@@ -40,7 +40,7 @@ function bannerMenu(paging,num1) {
         paging.classList.add('on');
     }
     var arrDiv = document.querySelectorAll('.slide-banner-wrap > .paged');
-    var num1 =0;
+    // var num1 =0;
     for (var i = 0; i < arrDiv.length; i++) {
         arrDiv[i].style.height=0;
         arrDiv[i].style.overflow='hidden';

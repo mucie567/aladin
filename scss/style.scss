@@ -248,6 +248,9 @@ body {
         top: 0;
         height: 0;
         overflow: hidden;
+        &:nth-of-type(1) {
+          height: auto;
+        }
         .bx-prev {
           position: absolute;
           top: 50%;
@@ -312,6 +315,10 @@ body {
             background: $mainColor-1;
             color: #fff;
             &:hover {
+              background: $mainColor-2;
+              color: #333;
+            }
+            &:focus {
               background: $mainColor-2;
               color: #333;
             }
