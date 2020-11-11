@@ -281,11 +281,34 @@ body {
         }
         .info-top {
           .tit-area {
-            h2 {
+            .book-name {
               font-size: 23px;
               font-weight: 600;
               margin-right: 2px;
+              .book-name-dl {
+                color: $mainColor-1;
+                font-size: 14px;
+              }
             }
+          }
+          .pub-area {
+            span {
+              position: relative;
+              display: inline-block;
+              &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '';
+                display: block;
+                width: 1;
+                height: 8px;
+                background-color: $fontColor-1;
+              }
+            }
+          }
+          .rating-area {
+            display: block;
           }
         }
       }
