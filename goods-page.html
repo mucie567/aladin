@@ -147,12 +147,12 @@
                             <span class="rating-sell">
                             판매지수 24,987
                             </span>
-                            <span class="rating-top">베스트<a href="#">국내도서 46위</a>국내도서 top100 1주</span>
+                            <span class="rating-top"><em>베스트</em><a href="#">국내도서 46위</a></span>
+                            <span>국내도서 top100 1주</span>
                         </span>
                     </div>
                     <div class="info-bot">
                         <div class="price-area">
-                            <p><span class="ico-benefit">구매혜택</span>포함 국내도서 2만원 ↑〈데스크 매트〉 증정 (포인트 차감)</p>
                             <div class="price-table">
                                 <table>
                                     <caption>상품 가격정보</caption>
@@ -163,70 +163,82 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">판매가</th>
-                                            <td>13,320원(10% 할인)</td>
+                                            <td>13,320원<span>(10% 할인)</span></td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">북클럽머니<br>최대혜택가<a href="#">도움말</a></th>
+                                            <th scope="row">북클럽머니<br>최대혜택가<a href="#">?</a></th>
                                             <td>14,800원</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">YES포인트<a href="#">도움말</a></th>
-                                            <td>740원(5% 적립)<br>5만원이상 구매 시 2천원 추가적립<a href="#">도움말</a></td>
+                                            <th scope="row">YES포인트<a href="#">?</a></th>
+                                            <td>740원(5% 적립)<br>5만원이상 구매 시 2천원 추가적립<a href="#">?</a></td>
                                         </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="price-other-form">
+                                <table>
+                                    <tbody>
                                         <tr>
                                             <th scope="row">결제혜택</th>
                                             <td>카드/간편결제 혜택을 확인하세요<a href="#" class="card-more"></a></td>
                                         </tr>
                                     </tbody>
                                 </table>
+                                <ul>
+                                    <li><a href="#">ebook<br><em>10,500원</em></a></li>
+                                    <li><a href="#">중고상품<br>판매요청하기</a></li>
+                                    <li><a href="#">이 상품을 팔기<br><em>매입가 7,400원</em></a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="price-other-form">
-                            <ul>
-                                <li><a href="#">ebook<br>10,500원</a></li>
-                                <li><a href="#">중고상품<br>판매요청하기</a></li>
-                                <li><a href="#">이 상품을 팔기<br>매입가 7,400원</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="action-area">
-                        <div class="action-top">
-                            <p>판매중</p>
-                            <label for="book-count-1">수량</label><input type="text" name="book-count" id="book-count-1">
-                            <button class="count-m"></button>
-                            <button class="count-p"></button>
-                            <span>배송비 무료</span>
-                            <div class="btn-buy-cart">
-                                <a href="#"><span>카트에 담기</span></a>
-                                <a href="#"><span>바로구매</span></a>
+                        <div class="action-area">
+                            <div class="action-top">
+                                <p class="action-now">판매중</p>
+                                <div class="quantity">
+                                    <label for="book-count-1">수량</label><input type="text" name="book-count" id="book-count-1">
+                                    <button class="count-m"></button>
+                                    <button class="count-p"></button>
+                                </div>
+                                <span>배송비: <em>무료</em></span>
+                                <div class="btn-buy-cart">
+                                    <a href="#"><span>카트에 담기</span></a>
+                                    <a href="#"><span>바로구매</span></a>
+                                </div>
+                                <p><span>하루배송</span>주문시<strong>내일 도착 예정</strong></p>
+                                <span class="speed-deli"><a href="#">총알 배송안내</a></span>
                             </div>
-                            <p><span>하루배송</span>주문시<strong>내일 도착 예정</strong></p>
-                            <span><a href="#">총알 배송안내</a></span>
-                        </div>
-                        <div class="action-bot">
-                            <ul class="ect">
-                                <li>해외배송 가능</li>
-                                <li>최저가 보상</li>
-                                <li>문화비소득공제 신청가능</li>
-                            </ul>
-                            <button class="into-list">리스트에 넣기</button>
+                            <div class="action-bot">
+                                <ul class="ect">
+                                    <li>해외배송 가능</li>
+                                    <li>최저가 보상</li>
+                                    <li>문화비소득공제 신청가능</li>
+                                </ul>
+                                <button class="into-list">리스트에 넣기</button>
+                                <button class="into-list">시리즈 알람신청</button>
+                                <span>시리즈 알림 서비스?</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="goods-tab-nav">
-                <ul>
-                    <li><a href="#">도서정보</a></li>
-                    <!-- <li><a href="#">리뷰/한줄평<span>(39/0)</span></a></li> -->
-                    <li><a href="#">배송/반품/교환</a></li>
-                </ul>
-                <a href="#">카트에 넣기</a>
-                <a href="#">바로구매</a>
-                <span>10,800원</span>
+            <div class="goods-tab-nav-bg">
+                <div class="goods-tab-nav">
+                    <ul>
+                        <li><a href="#">도서정보</a></li>
+                        <li><a href="#">리뷰/한줄평<span>(39/0)</span></a></li>
+                        <li><a href="#">배송/반품/교환</a></li>
+                    </ul>
+                    <div class="goods-tab-price-wrap">
+                        <span class="goods-tab-price">10,800<em>원</em></span>
+                        <span class="tab-price-btn-1"><a href="#">카트에 넣기</a></span>
+                        <span class="tab-price-btn-2"><a href="#">바로구매</a></span>
+                    </div>
+                </div>
             </div>
             <div class="goods-back">
                 <div class="info-set">
-                    <h3>품목정보</h3>
+                    <h3 class="info-title">품목정보</h3>
                     <table>
                         <caption>품목정보</caption>
                         <!-- <colgroup>
@@ -254,7 +266,7 @@
                     </table>
                 </div>
                 <div class="category">
-                    <h3>관련분류</h3>
+                    <h3 class="info-title">관련분류</h3>
                     <h4>카테고리 분류</h4>
                     <ul>
                         <li>
@@ -273,184 +285,188 @@
                             <a href="#">황금가지</a>
                         </li>
                     </ul>
+                    <h4>태그 분류</h4>
+                    <span><a href="#">#스페이스오페라</a></span>
+                    <span><a href="#">#판타지</a></span>
+                    <span><a href="#">#이영도</a></span>
                 </div>
-                <h4>태그 분류</h4>
-                <span><a href="#">#스페이스오페라</a></span>
-                <span><a href="#">#판타지</a></span>
-                <span><a href="#">#이영도</a></span>
-            </div>
-            <div class="event">
-                <h3>이 상품의 이벤트</h3>
-                <ul>
-                    <li>
-                        <a href="#"><img src="images/bn_event_138X85.jpg" alt="이벤트 증정"></a>
-                        <a href="#"><span>별뜨기에 관하여 증정</span></a>
-                        <span>도서구매시 '독서대'를 증정합니다.</span>
-                        <span>2020년 11월 05일 ~ 2022년 12월 31일</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="book-intro">
-                <h3>책소개</h3>
-                <div class="md-coice">
-                    <span>MD 한마디</span>
-                    <p>[장르를 넘나드는 이야기의 향연] 『드래곤 라자』의 작가 이영도가 그리는 색다른 이야기, 무한 상상의 세계! 작가가 2000년 이후 발표한 작품 10편을 엮은 첫 SF 단편소설집이다. 인류와 외계 문명의 교류를 그린 ‘위탄인 시리즈’를 비롯, SF, 판타지, 로맨스 등 다양한 장르 속에서 그 특유의 유머러스하고 기상천외한 전개가 펼쳐진다. -소설MD 박형욱</p>
+                <div class="event">
+                    <h3 class="info-title">이 상품의 이벤트</h3>
+                    <ul>
+                        <li>
+                            <div class="event-img">
+                                <a href="#"><img src="images/bn_event_138X85.jpg" alt="이벤트 증정"></a>
+                            </div>
+                            <div class="event-info">
+                                <span><a href="#">별뜨기에 관하여 증정</a></span>
+                                <span>도서구매시 '독서대'를 증정합니다.</span>
+                                <span>2020년 11월 05일 ~ 2022년 12월 31일</span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="txt-line">
-                    <strong>"지구인을 만나세요. 최근 꽤 현대적인 방법으로 재해석된 점성학을 다루는 점성학자가 있지요. 그는 자신을 별뜨기꾼이라고 부릅니다.”</strong>
-                    <p></p>            
-                </div>
-                <div class="preview">
-                    <p>책의 일부 내용을 미리 읽어보실 수 있습니다.</p>
-                    <a href="#">미리보기</a>
-                </div>
-            </div>
-            <div class="chapter">
-                <h3>목차</h3>
-                <ul>
-                    <li>카이와판돔의 번역에 관하여 7</li>
-                    <li>구세주가 된 로 봇에 대하여 45</li>
-                    <li>별뜨기에 관하여 55</li>
-                    <li>복수의 어머니에 관하여 101</li>
-                    <li>순간이동의 의미에 관하여 137</li>
-                    <li>나를 보는 눈 169</li>
-                    <li>아름다운 전통 205</li>
-                    <li>전사의 후예 215</li>
-                    <li>SINBIROUN 이야기 223</li>
-                    <li>봄이 왔다 253</li>
-                </ul>
-            </div>
-            <div class="author">
-                <h3>저자 소개</h3>
-                <div class="author-ingo-wrap">
-                    <div class="author-tit">
-                        <span>저:</span>
-                        <a href="#">이영도</a>
-                        <a href="#"><span>관심작가 알림신청</span></a>
-                        <a href="#"><span>작가 파일</span></a>
+                <div class="book-intro">
+                    <h3 class="info-title">책소개</h3>
+                    <div class="md-coice">
+                        <span>MD 한마디</span>
+                        <p>[장르를 넘나드는 이야기의 향연] 『드래곤 라자』의 작가 이영도가 그리는 색다른 이야기, 무한 상상의 세계! 작가가 2000년 이후 발표한 작품 10편을 엮은 첫 SF 단편소설집이다. 인류와 외계 문명의 교류를 그린 ‘위탄인 시리즈’를 비롯, SF, 판타지, 로맨스 등 다양한 장르 속에서 그 특유의 유머러스하고 기상천외한 전개가 펼쳐진다. -소설MD 박형욱</p>
                     </div>
-                    <div class="author-content">
-                        <div class="author-profile">
-                            <span>이영도 사진 이미지</span>
-                            <p class="author-intro"></p>
-                            <button class="btn-more" onclick="showMore()">더보기</button>
-                            <button class="btn-less">줄이기</button>
+                    <div class="txt-line">
+                        <strong>"지구인을 만나세요. 최근 꽤 현대적인 방법으로 재해석된 점성학을 다루는 점성학자가 있지요. 그는 자신을 별뜨기꾼이라고 부릅니다.”</strong>
+                        <p></p>            
+                    </div>
+                    <div class="preview">
+                        <p>책의 일부 내용을 미리 읽어보실 수 있습니다.</p>
+                        <a href="#">미리보기</a>
+                    </div>
+                </div>
+                <div class="chapter">
+                    <h3 class="info-title">목차</h3>
+                    <ul>
+                        <li>카이와판돔의 번역에 관하여 7</li>
+                        <li>구세주가 된 로 봇에 대하여 45</li>
+                        <li>별뜨기에 관하여 55</li>
+                        <li>복수의 어머니에 관하여 101</li>
+                        <li>순간이동의 의미에 관하여 137</li>
+                        <li>나를 보는 눈 169</li>
+                        <li>아름다운 전통 205</li>
+                        <li>전사의 후예 215</li>
+                        <li>SINBIROUN 이야기 223</li>
+                        <li>봄이 왔다 253</li>
+                    </ul>
+                </div>
+                <div class="author">
+                    <h3 class="info-title">저자 소개</h3>
+                    <div class="author-ingo-wrap">
+                        <div class="author-tit">
+                            <span>저:</span>
+                            <a href="#">이영도</a>
+                            <a href="#"><span>관심작가 알림신청</span></a>
+                            <a href="#"><span>작가 파일</span></a>
                         </div>
-                        <div class="author-interview">
-                            <h4>작가와의 인터뷰</h4>
+                        <div class="author-content">
+                            <div class="author-profile">
+                                <span>이영도 사진 이미지</span>
+                                <p class="author-intro"></p>
+                                <button class="btn-more" onclick="showMore()">더보기</button>
+                                <button class="btn-less">줄이기</button>
+                            </div>
+                            <div class="author-interview">
+                                <h4>작가와의 인터뷰</h4>
+                                <ul>
+                                    <li><a href="#">[만나고 싶었어요!] 이영도 “독자의 기대는 부담스러우면서도 좋은 것”</a></li>
+                                    <li><a href="#">[만나고 싶었어요!] 네크로맨서 이영도가 좀비들을 소환한다 - 『그림자 자국』 출간!</a></li>
+                                </ul>
+                            </div>
+                            <div class="author-other-book">
+                                <h4>작가의 다른 상품</h4>
+                                <ul>
+                                    <li><a href="#"><img src="images/M(1).jpg" alt=""><span>오버 더 초이스+호라이즌 박스 세트</span></a></li>
+                                    <li><a href="#"><img src="images/M(2).jpg" alt=""><span>오버 더 호라이즌</span></a></li>
+                                    <li><a href="#"><img src="images/M(3).jpg" alt=""><span>오버 더 초이스</span></a></li>
+                                    <li><a href="#"><img src="images/M.jpg" alt=""><span>시하와 칸타의 장</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pub-review">
+                    <h3 class="info-title">출판사 리뷰</h3>
+                    <p><strong>위탄인 시리즈로 만나는 이영도식 스페이스 오페라</strong>출판사 리뷰 복사</p>
+                </div>
+                <!-- <div class="reader-review">
+                    <h3 class="info-title">회원 리뷰</h3>
+                    <p>매주 10건의 우수리뷰를 선정하여 YES상품권 3만원을 드립니다.3,000원 이상 구매 후 리뷰 작성 시 일반회원 300원, 마니아회원 600원의 YES포인트를 드립니다.(CD/LP, DVD/Blu-ray, 패션 및 판매금지 상품, 예스24 앱스토어 상품 제외)</p>
+                    <button>리뷰쓰기></button>
+                    <div class="star-review">
+                        <p><span>4</span>명의 YES24 회원이 평가한 평균별점</p>
+                        <div class="review-rating">
+                            <p>
+                                <span>별점 찾기</span>
+                                <strong>10.0</strong>
+                                <span>/10.0</span>
+                            </p>
+                        </div>
+                        <div class="review-graph">
                             <ul>
-                                <li><a href="#">[만나고 싶었어요!] 이영도 “독자의 기대는 부담스러우면서도 좋은 것”</a></li>
-                                <li><a href="#">[만나고 싶었어요!] 네크로맨서 이영도가 좀비들을 소환한다 - 『그림자 자국』 출간!</a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
                             </ul>
                         </div>
-                        <div class="author-other-book">
-                            <h4>작가의 다른 상품</h4>
-                            <ul>
-                                <li><a href="#"><img src="images/M(1).jpg" alt=""><span>오버 더 초이스+호라이즌 박스 세트</span></a></li>
-                                <li><a href="#"><img src="images/M(2).jpg" alt=""><span>오버 더 호라이즌</span></a></li>
-                                <li><a href="#"><img src="images/M(3).jpg" alt=""><span>오버 더 초이스</span></a></li>
-                                <li><a href="#"><img src="images/M.jpg" alt=""><span>시하와 칸타의 장</span></a></li>
-                            </ul>
+                        <div class="review-text">
+    
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="pub-review">
-                <h3>출판사 리뷰</h3>
-                <p><strong>위탄인 시리즈로 만나는 이영도식 스페이스 오페라</strong>출판사 리뷰 복사</p>
-            </div>
-            <!-- <div class="reader-review">
-                <h3>회원 리뷰</h3>
-                <p>매주 10건의 우수리뷰를 선정하여 YES상품권 3만원을 드립니다.3,000원 이상 구매 후 리뷰 작성 시 일반회원 300원, 마니아회원 600원의 YES포인트를 드립니다.(CD/LP, DVD/Blu-ray, 패션 및 판매금지 상품, 예스24 앱스토어 상품 제외)</p>
-                <button>리뷰쓰기></button>
-                <div class="star-review">
-                    <p><span>4</span>명의 YES24 회원이 평가한 평균별점</p>
-                    <div class="review-rating">
-                        <p>
-                            <span>별점 찾기</span>
-                            <strong>10.0</strong>
-                            <span>/10.0</span>
-                        </p>
+                
+                
+                </div> -->
+                <div class="delivery">
+                    <h3 class="info-title">배송/반품/교환 안내</h3>
+                    <div class="delivery-ifo">
+                        <h4>배송 안내</h4>
+                        <table>
+                            <caption>배송정보</caption>
+                            <!-- <colgroup>
+                                <col width="170">
+                                <col width="*">
+                            </colgroup> -->
+                            <tbody>
+                                <tr>
+                                    <th>배송 구분</th>
+                                    <td>YES24 배송</td>
+                                </tr>
+                                <tr>
+                                    <th>포장 안내</th>
+                                    <td>안전하고 정확한 포장을 위해 CCTV를 설치하여 운영하고 있습니다. <br>고객님께 배송되는 모든 상품을 CCTV로 녹화하고 있으며, 철저한 모니터링을 통해 작업 과정에 문제가 없도록 최선을 다 하겠습니다.<br>목적 : 안전한 포장 관리<br>촬영범위 : 박스 포장 작업</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="review-graph">
-                        <ul>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                        </ul>
+                    <div class="refund">
+                        <h4>반품/교환 안내</h4>
+                        <span>※ 상품 설명에 반품/교환과 관련한 안내가 있는경우 아래 내용보다 우선합니다. (업체 사정에 따라 달라질 수 있습니다)</span>
+                        <table>
+                            <caption>반품/교환 정보</caption>
+                            <!-- <colgroup>
+                                <col width="170">
+                                <col width="*">
+                            </colgroup> -->
+                            <tbody>
+                                <tr>
+                                    <th>반품/교환 방법</th>
+                                    <td>
+                                        <ul>
+                                            <li>마이페이지 > 반품/교환 신청 및 조회, 1:1 문의, 고객만족센터(1544-3800), 중고샵(1566-4295)</li>
+                                            <li>판매자 배송 상품은 판매자와 반품/교환이 협의된 상품에 한해 가능합니다.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>반품/교환 가능기간</th>
+                                    <td>
+                                        <ul>
+                                            <li>출고 완료 후 10일 이내의 주문 상품</li>
+                                            <li>디지털 콘텐츠인 eBook의 경우 구매 후 7일 이내의 상품</li>
+                                            <li>중고상품의 경우 출고 완료일로부터 6일 이내의 상품 (구매확정 전 상태)</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>반품/교환 비용</th>
+                                    <td>
+                                        <ul>
+                                            <li>고객의 단순변심 및 착오구매일 경우 상품 반송비용은 고객 부담임</li>
+                                            <li>직수입양서/직수입일서중 일부는 변심 또는 착오로 취소시 해외주문취소수수료 20%를 부과할수 있음</li>
+                                            <li>박스 포장은 택배 배송이 가능한 규격과 무게를 준수하며, 고객의 단순변심 및 착오구매일 경우 상품의 반송비용은 박스 당 부과됩니다.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="review-text">
-
-                    </div>
-                </div>
-            
-            
-            </div> -->
-            <div class="delivery">
-                <h3>배송/반품/교환 안내</h3>
-                <div class="delivery-ifo">
-                    <h4>배송 안내</h4>
-                    <table>
-                        <caption>배송정보</caption>
-                        <!-- <colgroup>
-                            <col width="170">
-                            <col width="*">
-                        </colgroup> -->
-                        <tbody>
-                            <tr>
-                                <th>배송 구분</th>
-                                <td>YES24 배송</td>
-                            </tr>
-                            <tr>
-                                <th>포장 안내</th>
-                                <td>안전하고 정확한 포장을 위해 CCTV를 설치하여 운영하고 있습니다. <br>고객님께 배송되는 모든 상품을 CCTV로 녹화하고 있으며, 철저한 모니터링을 통해 작업 과정에 문제가 없도록 최선을 다 하겠습니다.<br>목적 : 안전한 포장 관리<br>촬영범위 : 박스 포장 작업</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="refund">
-                    <h4>반품/교환 안내</h4>
-                    <span>※ 상품 설명에 반품/교환과 관련한 안내가 있는경우 아래 내용보다 우선합니다. (업체 사정에 따라 달라질 수 있습니다)</span>
-                    <table>
-                        <caption>반품/교환 정보</caption>
-                        <!-- <colgroup>
-                            <col width="170">
-                            <col width="*">
-                        </colgroup> -->
-                        <tbody>
-                            <tr>
-                                <th>반품/교환 방법</th>
-                                <td>
-                                    <ul>
-                                        <li>마이페이지 > 반품/교환 신청 및 조회, 1:1 문의, 고객만족센터(1544-3800), 중고샵(1566-4295)</li>
-                                        <li>판매자 배송 상품은 판매자와 반품/교환이 협의된 상품에 한해 가능합니다.</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>반품/교환 가능기간</th>
-                                <td>
-                                    <ul>
-                                        <li>출고 완료 후 10일 이내의 주문 상품</li>
-                                        <li>디지털 콘텐츠인 eBook의 경우 구매 후 7일 이내의 상품</li>
-                                        <li>중고상품의 경우 출고 완료일로부터 6일 이내의 상품 (구매확정 전 상태)</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>반품/교환 비용</th>
-                                <td>
-                                    <ul>
-                                        <li>고객의 단순변심 및 착오구매일 경우 상품 반송비용은 고객 부담임</li>
-                                        <li>직수입양서/직수입일서중 일부는 변심 또는 착오로 취소시 해외주문취소수수료 20%를 부과할수 있음</li>
-                                        <li>박스 포장은 택배 배송이 가능한 규격과 무게를 준수하며, 고객의 단순변심 및 착오구매일 경우 상품의 반송비용은 박스 당 부과됩니다.</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
             </div>
         </div>
