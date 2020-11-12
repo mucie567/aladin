@@ -40,10 +40,9 @@ function autoAddNum() {
 
 
 function bannerMenu(paging,num1) {
-    console.log(paging);
+    
     var arr = paging.className.split('');
     if(arr.indexOf('on')<0){
-        console.log(paging);
         document.querySelector('.on').classList.remove('on');
         paging.classList.add('on');
     }
@@ -54,7 +53,8 @@ function bannerMenu(paging,num1) {
         arrDiv[i].style.overflow='hidden';
     }
     arrDiv[num1].style.height='auto';
-    console.log(arrDiv[num1s])
+    return false;
+    
 }
 
 
