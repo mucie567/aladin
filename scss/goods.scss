@@ -804,6 +804,53 @@ body {
     .author {
       padding-bottom: 50px;
       border-bottom: 1px solid $boarderColor-1;
+      .author-ingo-wrap {
+        width: 100%;
+        border: 1px solid $boarderColor-1;
+        .author-tit {
+          width: 100%;
+          display: table;
+          background: #f8f8f8;
+          .author-name {
+            display: table-cell;
+            padding: 13px 10px 13px 20px;
+            line-height: 24px;
+            font-size: 16px;
+            color: $fontColor-1;
+            font-weight: bold;
+          }
+          .author-file {
+            display: table-cell;
+            padding: 10px 9px 10px 0;
+            text-align: right;
+            vertical-align: middle;
+            a {
+              display: inline-block;
+              border: 1px solid $boarderColor-1;
+              background: #fff;
+              padding: 0 7px;
+              height: 28px;
+              line-height: 28px;
+            }
+          }
+        }
+        .author-content {
+          .author-profile {
+            overflow: hidden;
+            .author-img {
+              display: block;
+              float: left;
+              width: 120px;
+              height: 120px;
+              border-radius: 120px;
+              background: url('../images/6689890.jpg') no-repeat left top;
+              background-size: cover;
+            }
+            .author-intro {
+            }
+          }
+        }
+      }
     }
   }
 }
