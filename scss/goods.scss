@@ -947,7 +947,7 @@ body {
     }
     .reader-review {
       padding-bottom: 50px;
-      border-bottom: 1px solid $boarderColor-1;
+
       p {
         padding-bottom: 15px;
         span {
@@ -1043,6 +1043,75 @@ body {
         }
         .review-text {
           padding-top: 30px;
+          .review-text-tab {
+            overflow: hidden;
+            border-bottom: 1px solid #333;
+            line-height: 1em;
+            p {
+              float: left;
+              font-size: 15px;
+            }
+            ul {
+              float: right;
+              overflow: hidden;
+              li {
+                float: left;
+                padding-left: 5px;
+              }
+            }
+          }
+          .review-text-list {
+            > ul {
+              > li {
+                position: relative;
+                padding-top: 15px;
+                display: table;
+                width: 100%;
+                border-bottom: 1px solid $boarderColor-1;
+                .left-content {
+                  display: table-cell;
+                  font-size: 12px;
+                  p {
+                    .review-star {
+                      width: 78px;
+                      height: 13px;
+                      background: url('../images/goods/goods-rating-star.png')
+                        no-repeat 0 0;
+                      padding-bottom: 0;
+                    }
+                    .review-name {
+                      display: block;
+                    }
+                  }
+                  ul {
+                    overflow: hidden;
+                    li {
+                      float: left;
+                    }
+                  }
+                }
+                .review-recommend {
+                  position: absolute;
+                  right: 10px;
+                  bottom: 10px;
+                  button {
+                    border: 1px solid $boarderColor-1;
+                    width: 30px;
+                    height: 25px;
+                    text-indent: -99999px;
+                  }
+                  .recommend-talk {
+                    background: url('../images/goods/review-ico-btn-talk.png')
+                      no-repeat 50%;
+                  }
+                  .recommend-thumbs {
+                    background: url('../images/goods/review-ico-btn-thumb.png')
+                      no-repeat 50%;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
