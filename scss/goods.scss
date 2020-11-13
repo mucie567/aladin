@@ -12,6 +12,11 @@ body {
   padding-bottom: 15px;
   margin-top: 50px;
 }
+.info-tit-2 {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 30px 0;
+}
 #web-banner {
   width: 100%;
   height: 60px;
@@ -215,28 +220,32 @@ body {
 }
 #container {
   border-top: 1px solid $mainColor-1;
-  .location {
-    max-width: 1200px;
-    margin: 0 auto;
-    ul {
-      overflow: hidden;
-      padding: 10px 0;
-      li {
-        position: relative;
-        float: left;
-        padding-right: 25px;
-        &::after {
-          position: absolute;
-          top: 0;
-          left: -15px;
-          content: ' \003E';
-        }
-        a {
-          font-size: 16px;
-          color: $fontColor-1;
-        }
-        &:last-child {
-          padding-right: 0;
+  .location-bg {
+    width: 100%;
+    background: #f8f8f8;
+    .location {
+      max-width: 960px;
+      margin: 0 auto;
+      ul {
+        overflow: hidden;
+        padding: 10px 0;
+        li {
+          position: relative;
+          float: left;
+          padding-right: 25px;
+          &::after {
+            position: absolute;
+            top: 0;
+            left: -15px;
+            content: ' \003E';
+          }
+          a {
+            font-size: 16px;
+            color: $fontColor-1;
+          }
+          &:last-child {
+            padding-right: 0;
+          }
         }
       }
     }
@@ -572,6 +581,7 @@ body {
       width: 100%;
       background: #f8f8f8;
       height: 60px;
+      border-bottom: 1px solid $fontColor-1;
       .goods-tab-nav {
         position: relative;
         max-width: 960px;
@@ -671,11 +681,6 @@ body {
       .category {
         padding-bottom: 50px;
         border-bottom: 1px solid $boarderColor-1;
-        h4 {
-          font-size: 16px;
-          font-weight: bold;
-          padding-bottom: 5px;
-        }
         ul {
           li {
             position: relative;
@@ -803,7 +808,6 @@ body {
     }
     .author {
       padding-bottom: 50px;
-      border-bottom: 1px solid $boarderColor-1;
       .author-ingo-wrap {
         width: 100%;
         border: 1px solid $boarderColor-1;
@@ -835,8 +839,13 @@ body {
           }
         }
         .author-content {
+          padding-top: 30px;
+          margin: 0 30px;
           .author-profile {
             overflow: hidden;
+            padding-bottom: 30px;
+            border-bottom: 1px solid $boarderColor-1;
+            position: relative;
             .author-img {
               display: block;
               float: left;
@@ -845,8 +854,245 @@ body {
               border-radius: 120px;
               background: url('../images/6689890.jpg') no-repeat left top;
               background-size: cover;
+              margin-right: 26px;
             }
             .author-intro {
+              font-size: 15px;
+              line-height: 1.74em;
+              color: $fontColor-1;
+            }
+            button {
+              position: absolute;
+              top: 315px;
+              right: 0;
+              border: none;
+              color: $mainColor-1;
+              background: #fff;
+              padding-right: 15px;
+              &::after {
+                display: inline-block;
+                content: ' \005E';
+                transform: rotate(180deg);
+              }
+            }
+            .btn-less {
+              display: none;
+              &::after {
+                display: inline-block;
+                content: ' \005E';
+              }
+            }
+          }
+          .author-interview {
+            padding-bottom: 30px;
+            border-bottom: 1px solid $boarderColor-1;
+            ul {
+              padding-top: 20px;
+              overflow: hidden;
+              li {
+                position: relative;
+                float: left;
+                padding: 0 0 10px 15px;
+                &::before {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  top: 10px;
+                  left: 5px;
+                  width: 3px;
+                  height: 3px;
+                  border-radius: 50%;
+                  background: #333;
+                }
+              }
+            }
+          }
+          .author-other-book {
+            padding-bottom: 30px;
+            ul {
+              width: 100%;
+              display: table;
+              table-layout: fixed;
+              text-align: center;
+              li {
+                display: table-cell;
+                span {
+                  padding: 10px 0;
+                  display: block;
+                  &:nth-of-type(2) {
+                    padding: 0;
+                  }
+                  em {
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .pub-review {
+      padding-bottom: 50px;
+      border-bottom: 1px solid $boarderColor-1;
+      p {
+        strong {
+          display: block;
+          padding: 10px 0;
+        }
+        font-size: 15px;
+        line-height: 1.74em;
+        color: $fontColor-1;
+      }
+    }
+    .reader-review {
+      padding-bottom: 50px;
+      border-bottom: 1px solid $boarderColor-1;
+      p {
+        padding-bottom: 15px;
+        span {
+          display: block;
+        }
+      }
+      .txt-area {
+        .star-making {
+          padding-bottom: 10px;
+          text-align: left;
+          li {
+            display: inline-block;
+            width: 38px;
+            height: 38px;
+            background: url('../images/goods/btn-star-emp.png');
+            &:first-child {
+              background: none;
+              width: auto;
+              height: auto;
+              font-size: 16px;
+            }
+          }
+        }
+        .review-write {
+          display: table;
+          width: 100%;
+          border: 1px solid $boarderColor-1;
+          padding: 30px;
+          background: #f8f8f8;
+          textarea {
+            display: table-cell;
+            width: 100%;
+            height: 70px;
+          }
+          .review-notice {
+            overflow: hidden;
+            padding-top: 10px;
+            span {
+              float: left;
+              margin-left: 0;
+            }
+            .review-notice-btn {
+              float: right;
+              button {
+                width: 100px;
+                height: 30px;
+                border: none;
+                background: $mainColor-1;
+                color: #fff;
+                font-size: 16px;
+              }
+              input[type='checkbox'] {
+                width: 18px;
+                height: 18px;
+                border: 1px solid $boarderColor-1;
+                margin-right: 5px;
+                line-height: 18px;
+                + label {
+                  line-height: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .star-review-list {
+        h4 {
+          text-align: center;
+          span {
+            color: $mainColor-1;
+          }
+        }
+        .review-rating {
+          text-align: center;
+          p {
+            .star-total {
+              display: inline-block;
+              width: 219px;
+              height: 36px;
+              background: url('../images/goods/five-star-b.png');
+            }
+            strong {
+              font-size: 48px;
+              font-weight: bold;
+              + span {
+                display: inline;
+                font-size: 30px;
+                font-weight: normal;
+                color: #333;
+              }
+            }
+          }
+        }
+        .review-text {
+          padding-top: 30px;
+        }
+      }
+    }
+    .delivery {
+      .delivery-info {
+        table {
+          width: 100%;
+          text-align: left;
+          tbody {
+            border-top: 1px solid $boarderColor-1;
+            border-bottom: 1px solid $boarderColor-1;
+            tr {
+              border: 1px solid #ebebeb;
+              border-left: none;
+              border-right: none;
+              th {
+                width: 170px;
+                padding: 12px 0;
+                border-right: 1px solid #ebebeb;
+                background: #f8f8f8;
+                text-align: center;
+              }
+              td {
+                padding: 12px 14px;
+              }
+            }
+          }
+        }
+      }
+      .refund {
+        table {
+          width: 100%;
+          text-align: left;
+          tbody {
+            border-top: 1px solid $boarderColor-1;
+            border-bottom: 1px solid $boarderColor-1;
+            tr {
+              border: 1px solid #ebebeb;
+              border-left: none;
+              border-right: none;
+              th {
+                width: 170px;
+                padding: 12px 0;
+                border-right: 1px solid #ebebeb;
+                background: #f8f8f8;
+                text-align: center;
+              }
+              td {
+                padding: 12px 14px;
+              }
             }
           }
         }
