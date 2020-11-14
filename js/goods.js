@@ -26,6 +26,25 @@
 //     stringCount('author-profile')
 // }
 
+function myFunction() {
+  document.getElementById("gnb-wrap").classList.toggle("on");
+  // document.getElementsByClassName(".btn-close").classList.add(".on");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("gnb-content");
+    var exit = document.getElementsByClassName("btn-close")
+    var i;
+    for (i = 0; i < exit.length; i++) {
+      var openDropdown = exit[i];
+       if (openDropdown.classList.contains('on')) {
+         dropdowns.classList.remove('on');
+      }
+    }
+  }
+}
 
 
 function myFunction() {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>알라딘 중고서점|상품 페이지</title>
+    <script src="js/jquery.min.js"></script>
     <script src="js/goods.js"></script>
     <link rel="stylesheet" href="css/goods.min.css">
 </head>
@@ -29,7 +30,7 @@
         </div>
         <div class="header-bot">
             <ul class="util-menu">
-                <li class="all-menu"><a href="#gnb">전체메뉴</a></li>
+                <li class="all-menu"><a href="#" onclick="myFunction()" class="dropbtn">전체메뉴</a></li>
                 <li class="service"><a href="#">홈</a></li>
                 <li class="cart"><a href="#">알림</a></li>
                 <li class="cart"><a href="#">장바구니</a></li>
@@ -37,7 +38,8 @@
                 <li class="service"><a href="#">고객센터</a></li>
             </ul>
         </div>
-        <div class="gnb-wrap">
+        <!-- <div id="gnb-wrap" class="on"> -->
+        <div id="gnb-wrap" class="gnb-content">
             <div class="gnb">
                 <ul>
                     <li><a href="#">국내도서</a>
@@ -94,7 +96,7 @@
                     <li><a href="#">북플/서재</a></li>
                 </ul>
             </div>
-            <p class="btn-close"><a href="#">닫기</a></p>
+            <!-- <p class="btn-close"><a href="#">닫기</a></p> -->
         </div>
     </header>
     <div id="container">

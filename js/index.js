@@ -1,38 +1,22 @@
-$(function() {
-    var gnbMenu1 = $('#gnb-wrap');
-    gnbMenu1.on('click',gnbMenuHandler1);
-    console.log(gnbMenu1)
-    //.on(이벤트타임,이벤트핸들러);
-    function gnbMenuHandler1() {
-        //console.log($(this));
-        
-            
-            $('#gnb-wrap.on').addClass('.on');
-            $('.allmenu').removeClass('.on');
-        
-        
+function myFunction() {
+    document.getElementById("gnb-wrap").classList.toggle("on");
+    // document.getElementsByClassName(".btn-close").classList.add(".on");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("gnb-content");
+      var exit = document.getElementsByClassName("btn-close")
+      var i;
+      for (i = 0; i < exit.length; i++) {
+        var openDropdown = exit[i];
+         if (openDropdown.classList.contains('on')) {
+           dropdowns.classList.remove('on');
+        }
+      }
     }
-
-    $('#gnb').on('mouseleave',gnbLeaveHandler);
-
-    function gnbLeaveHandler() {
-        $('#gnb-wrap.on').removeClass('on');
-    }
-    
-    $('.allmenu').on('click',allMenuFnc);
-    function allMenuFnc(e) {
-        $(this).toggleClass('on')
-        console.log(e);
-        e.preventDefault();
-        // return false;
-    }
-    $('.btn-menu-close a').on('click',allMenuCloseFnc);
-    function allMenuCloseFnc(e) {
-        $('.allmenu.on').removeClass('on');
-        e.preventDefault();
-    }
-});
-
+  }
 
 
 

@@ -134,7 +134,7 @@ body {
   .gnb {
     > ul {
       position: relative;
-      width: 500px;
+      max-width: 1200px;
       height: 100%;
       padding: 30px;
       &::after {
