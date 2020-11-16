@@ -71,18 +71,18 @@ window.onclick = function(event) {
 }
 
 
-function myFunction() {
+function myFunction1() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
-    var btnText = document.getElementById("btn-read-more");
+    var btnText = document.getElementById("myBtn");
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
-      btnText.innerHTML = "Read more"; 
+      btnText.innerHTML = "더보기"; 
       moreText.style.display = "none";
     } else {
       dots.style.display = "none";
-      btnText.innerHTML = "Read less"; 
+      btnText.innerHTML = "줄이기"; 
       moreText.style.display = "inline";
     }
   }
@@ -94,11 +94,11 @@ function myFunction() {
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
-      btnText.innerHTML = "Read more"; 
+      btnText.innerHTML = "더보기"; 
       moreText.style.display = "none";
     } else {
       dots.style.display = "none";
-      btnText.innerHTML = "Read less"; 
+      btnText.innerHTML = "줄이기"; 
       moreText.style.display = "inline";
     }
   }

@@ -8,94 +8,90 @@
     <link rel="stylesheet" href="css/cart.min.css">
 </head>
 <body>
-    <div id="web-banner">
-        <ul>
-            <!-- <li><a href="#" class="on"><img src="images/banner-ad-1.png" alt="광고"></a></li> -->
-            <li><a href="#"><img src="images/banner-ad-1.png" alt="광고"></a></li>
-            <li><a href="#"><img src="images/banner-ad-2.png" alt="광고2"></a></li>
-            <li><a href="#"><img src="images/banner-ad-2.png" alt="광고3"></a></li>
-        </ul>
-    </div>
     <header id="header">
         <div class="header-top">
             <div class="header-left">
-                <h1 class="logo"><a href="#">알라딘</a></h1>
+                <h1 class="logo"><a href="index.html">알라딘</a></h1>
             </div>
             <div class="header-right">
-                <button class="cart">로그인</button>
+                <button class="login"><a href="login.html">로그인</a></button>
                 <button class="sign-up">회원가입</button>
                 <button class="sch-bar">검색</button>
             </div>
         </div>
-        <div class="header-bot">
-            <ul class="util-menu">
-                <li class="all-menu"><a href="#" onclick="myFunction()" class="dropbtn">전체메뉴</a></li>
-                <li class="service"><a href="#">홈</a></li>
-                <li class="cart"><a href="#">알림</a></li>
-                <li class="cart"><a href="#">장바구니</a></li>
-                <li class="mypage"><a href="#">마이페이지</a></li>
-                <li class="service"><a href="#">고객센터</a></li>
-            </ul>
-        </div>
-        <!-- <div id="gnb-wrap" class="on"> -->
-        <div id="gnb-wrap" class="gnb-content">
-            <div class="gnb">
-                <ul>
-                    <li><a href="#">국내도서</a>
-                        <div class="sub-menu"><ul>
-                        <li><a href="#">유아</a>
-                        <div class="sub-menu-2"><ul>
-                        <li><a href="#">도서 모두보기</a></li>
-                        <li><a href="#">베스트셀러</a></li>
-                        <li><a href="#">스테디셀러</a></li>
-                        <li><a href="#">정가인하/정가free</a></li>
-                        <li><a href="#">최고평점도서</a></li>
-                        <li><a href="#">편집자 추천도서</a></li>
-                        </ul></div>
-                        </li>
-                        <li><a href="#">어린이</a></li>
-                        <li><a href="#">전집/중고전집</a></li>
-                        <li><a href="#">청소년</a></li>
-                        <li><a href="#">좋은부모</a></li>
-                        <li><a href="#">초등학교 참고서</a></li>
-                        <li><a href="#">중학교 참고서</a></li>
-                        <li><a href="#">고등학교 참고서</a></li>
-                        <li><a href="#">가정/요리/뷰티</a></li>
-                        <li><a href="#">건강/취미/레저</a></li>
-                        <li><a href="#">소설/시/희곡</a></li>
-                        <li><a href="#">장르소설</a></li>
-                        <li><a href="#">에세이</a></li>
-                        <li><a href="#">여행</a></li>
-                        <li><a href="#">만화</a></li>
-                        <li><a href="#">인문학</a></li>
-                        <li><a href="#">사회과학</a></li>
-                        <li><a href="#">역사</a></li>
-                        <li><a href="#">예술/대중문화</a></li>
-                        <li><a href="#">과학</a></li>
-                        <li><a href="#">경제/경영</a></li>
-                        <li><a href="#">자기계발</a></li>
-                        <li><a href="#">외국어</a></li>
-                        <li><a href="#">IT</a></li>
-                        <li><a href="#">대학교재</a></li>
-                        <li><a href="#">수험서/자격증</a></li>
-                        <li><a href="#">공무원 수험서</a></li>
-                        <li><a href="#">달력/기타</a></li>
-                        <li><a href="#">종교/역학/철학</a></li>
-                        <li><a href="#">잡지</a></li>
-                        </ul></div>
-                    </li>
-                    <li><a href="#">외국도서</a></li>
-                    <li><a href="#">EBOOK</a></li>
-                    <li><a href="#">알라딘 굿즈</a></li>
-                    <li><a href="#">온라인 중고샵</a></li>
-                    <li><a href="#">중고매장</a></li>
-                    <li><a href="#">커피</a></li>
-                    <li><a href="#">음반</a></li>
-                    <li><a href="#">DVD</a></li>
-                    <li><a href="#">북플/서재</a></li>
+        <div class="header-bot-bg">
+            <div class="header-bot">
+                <ul class="util-menu">
+                    <li class="all-menu"><a href="#" onclick="myFunction()" class="dropbtn"><img src="images/iconfinder_menu-alt_134216.png" alt=""><span>전체메뉴</span></a></li>
+                    <li class="service"><a href="index.html"><img src="images/iconfinder_multimedia-17_2849819.png" alt=""><span>홈</span></a></li>
+                    <li class="cart"><a href="#"><img src="images/ut-ico-not.png" alt=""><span>알림</span></a></li>
+                    <li class="cart"><a href="cart.html"><img src="images/iconfinder_shopping-cart_326700.png" alt=""><span>장바구니</span></a></li>
+                    <li class="mypage"><a href="#"><img src="images/ut-ico-pro.png" alt=""><span>마이페이지</span></a></li>
+                    <li class="service"><a href="#"><img src="images/ut-ico-ser.png" alt=""><span>고객센터</span></a></li>
                 </ul>
             </div>
-            <!-- <p class="btn-close"><a href="#">닫기</a></p> -->
+        </div>
+        <!-- <div id="gnb-wrap" class="on"> -->
+        <div id="gnb-scroll-wrap">
+            <div id="gnb-wrap" class="gnb-content">
+                <div class="gnb">
+                    <ul>
+                        <li><a href="#">국내도서</a>
+                            <div class="sub-menu"><ul>
+                            <li><a href="#">유아</a>
+                            <div class="sub-menu-2"><ul>
+                            <li><a href="#">도서 모두보기</a></li>
+                            <li><a href="#">베스트셀러</a></li>
+                            <li><a href="#">스테디셀러</a></li>
+                            <li><a href="#">정가인하/정가free</a></li>
+                            <li><a href="#">최고평점도서</a></li>
+                            <li><a href="#">편집자 추천도서</a></li>
+                            </ul></div>
+                            </li>
+                            <li><a href="#">어린이</a></li>
+                            <li><a href="#">전집/중고전집</a></li>
+                            <li><a href="#">청소년</a></li>
+                            <li><a href="#">좋은부모</a></li>
+                            <li><a href="#">초등학교 참고서</a></li>
+                            <li><a href="#">중학교 참고서</a></li>
+                            <li><a href="#">고등학교 참고서</a></li>
+                            <li><a href="#">가정/요리/뷰티</a></li>
+                            <li><a href="#">건강/취미/레저</a></li>
+                            <li><a href="#">소설/시/희곡</a></li>
+                            <li><a href="#">장르소설</a></li>
+                            <li><a href="#">에세이</a></li>
+                            <li><a href="#">여행</a></li>
+                            <li><a href="#">만화</a></li>
+                            <li><a href="#">인문학</a></li>
+                            <li><a href="#">사회과학</a></li>
+                            <li><a href="#">역사</a></li>
+                            <li><a href="#">예술/대중문화</a></li>
+                            <li><a href="#">과학</a></li>
+                            <li><a href="#">경제/경영</a></li>
+                            <li><a href="#">자기계발</a></li>
+                            <li><a href="#">외국어</a></li>
+                            <li><a href="#">IT</a></li>
+                            <li><a href="#">대학교재</a></li>
+                            <li><a href="#">수험서/자격증</a></li>
+                            <li><a href="#">공무원 수험서</a></li>
+                            <li><a href="#">달력/기타</a></li>
+                            <li><a href="#">종교/역학/철학</a></li>
+                            <li><a href="#">잡지</a></li>
+                            </ul></div>
+                        </li>
+                        <li><a href="#">외국도서</a></li>
+                        <li><a href="#">EBOOK</a></li>
+                        <li><a href="#">알라딘 굿즈</a></li>
+                        <li><a href="#">온라인 중고샵</a></li>
+                        <li><a href="#">중고매장</a></li>
+                        <li><a href="#">커피</a></li>
+                        <li><a href="#">음반</a></li>
+                        <li><a href="#">DVD</a></li>
+                        <li><a href="#">북플/서재</a></li>
+                    </ul>
+                </div>
+                <!-- <p class="btn-close"><a href="#">닫기</a></p> -->
+            </div>
         </div>
     </header>
     <div id="container">

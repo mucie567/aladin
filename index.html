@@ -9,94 +9,90 @@
     <script src="js/index.js"></script>
 </head>
 <body>
-    <div id="web-banner">
-        <ul>
-            <!-- <li><a href="#" class="on"><img src="images/banner-ad-1.png" alt="광고"></a></li> -->
-            <li><a href="#"><img src="images/banner-ad-1.png" alt="광고"></a></li>
-            <li><a href="#"><img src="images/banner-ad-2.png" alt="광고2"></a></li>
-            <li><a href="#"><img src="images/banner-ad-2.png" alt="광고3"></a></li>
-        </ul>
-    </div>
         <header id="header">
             <div class="header-top">
                 <div class="header-left">
-                    <h1 class="logo"><a href="#">알라딘</a></h1>
+                    <h1 class="logo"><a href="index.html">알라딘</a></h1>
                 </div>
                 <div class="header-right">
-                    <button class="login">로그인</button>
+                    <button class="login"><a href="login.html">로그인</a></button>
                     <button class="sign-up">회원가입</button>
                     <button class="sch-bar">검색</button>
                 </div>
             </div>
-            <div class="header-bot">
-                <ul class="util-menu">
-                    <li class="all-menu"><a href="#" onclick="myFunction()" class="dropbtn">전체메뉴</a></li>
-                    <li class="service"><a href="#">홈</a></li>
-                    <li class="cart"><a href="#">알림</a></li>
-                    <li class="cart"><a href="#">장바구니</a></li>
-                    <li class="mypage"><a href="#">마이페이지</a></li>
-                    <li class="service"><a href="#">고객센터</a></li>
-                </ul>
-            </div>
-            <!-- <div id="gnb-wrap" class="on"> -->
-            <div id="gnb-wrap" class="gnb-content">
-                <div class="gnb">
-                    <ul>
-                        <li><a href="#">국내도서</a>
-                            <div class="sub-menu"><ul>
-                            <li><a href="#">유아</a>
-                            <div class="sub-menu-2"><ul>
-                            <li><a href="#">도서 모두보기</a></li>
-                            <li><a href="#">베스트셀러</a></li>
-                            <li><a href="#">스테디셀러</a></li>
-                            <li><a href="#">정가인하/정가free</a></li>
-                            <li><a href="#">최고평점도서</a></li>
-                            <li><a href="#">편집자 추천도서</a></li>
-                            </ul></div>
-                            </li>
-                            <li><a href="#">어린이</a></li>
-                            <li><a href="#">전집/중고전집</a></li>
-                            <li><a href="#">청소년</a></li>
-                            <li><a href="#">좋은부모</a></li>
-                            <li><a href="#">초등학교 참고서</a></li>
-                            <li><a href="#">중학교 참고서</a></li>
-                            <li><a href="#">고등학교 참고서</a></li>
-                            <li><a href="#">가정/요리/뷰티</a></li>
-                            <li><a href="#">건강/취미/레저</a></li>
-                            <li><a href="#">소설/시/희곡</a></li>
-                            <li><a href="#">장르소설</a></li>
-                            <li><a href="#">에세이</a></li>
-                            <li><a href="#">여행</a></li>
-                            <li><a href="#">만화</a></li>
-                            <li><a href="#">인문학</a></li>
-                            <li><a href="#">사회과학</a></li>
-                            <li><a href="#">역사</a></li>
-                            <li><a href="#">예술/대중문화</a></li>
-                            <li><a href="#">과학</a></li>
-                            <li><a href="#">경제/경영</a></li>
-                            <li><a href="#">자기계발</a></li>
-                            <li><a href="#">외국어</a></li>
-                            <li><a href="#">IT</a></li>
-                            <li><a href="#">대학교재</a></li>
-                            <li><a href="#">수험서/자격증</a></li>
-                            <li><a href="#">공무원 수험서</a></li>
-                            <li><a href="#">달력/기타</a></li>
-                            <li><a href="#">종교/역학/철학</a></li>
-                            <li><a href="#">잡지</a></li>
-                            </ul></div>
-                        </li>
-                        <li><a href="#">외국도서</a></li>
-                        <li><a href="#">EBOOK</a></li>
-                        <li><a href="#">알라딘 굿즈</a></li>
-                        <li><a href="#">온라인 중고샵</a></li>
-                        <li><a href="#">중고매장</a></li>
-                        <li><a href="#">커피</a></li>
-                        <li><a href="#">음반</a></li>
-                        <li><a href="#">DVD</a></li>
-                        <li><a href="#">북플/서재</a></li>
+            <div class="header-bot-bg">
+                <div class="header-bot">
+                    <ul class="util-menu">
+                        <li class="all-menu"><a href="#" onclick="myFunction()" class="dropbtn"><img src="images/iconfinder_menu-alt_134216.png" alt=""><span>전체메뉴</span></a></li>
+                        <li class="service"><a href="index.html"><img src="images/iconfinder_multimedia-17_2849819.png" alt=""><span>홈</span></a></li>
+                        <li class="cart"><a href="#"><img src="images/ut-ico-not.png" alt=""><span>알림</span></a></li>
+                        <li class="cart"><a href="cart.html"><img src="images/iconfinder_shopping-cart_326700.png" alt=""><span>장바구니</span></a></li>
+                        <li class="mypage"><a href="#"><img src="images/ut-ico-pro.png" alt=""><span>마이페이지</span></a></li>
+                        <li class="service"><a href="#"><img src="images/ut-ico-ser.png" alt=""><span>고객센터</span></a></li>
                     </ul>
                 </div>
-                <!-- <p class="btn-close"><a href="#">닫기</a></p> -->
+            </div>
+            <!-- <div id="gnb-wrap" class="on"> -->
+            <div id="gnb-scroll-wrap">
+                <div id="gnb-wrap" class="gnb-content">
+                    <div class="gnb">
+                        <ul>
+                            <li><a href="#">국내도서</a>
+                                <div class="sub-menu"><ul>
+                                <li><a href="#">유아</a>
+                                <div class="sub-menu-2"><ul>
+                                <li><a href="#">도서 모두보기</a></li>
+                                <li><a href="#">베스트셀러</a></li>
+                                <li><a href="#">스테디셀러</a></li>
+                                <li><a href="#">정가인하/정가free</a></li>
+                                <li><a href="#">최고평점도서</a></li>
+                                <li><a href="#">편집자 추천도서</a></li>
+                                </ul></div>
+                                </li>
+                                <li><a href="#">어린이</a></li>
+                                <li><a href="#">전집/중고전집</a></li>
+                                <li><a href="#">청소년</a></li>
+                                <li><a href="#">좋은부모</a></li>
+                                <li><a href="#">초등학교 참고서</a></li>
+                                <li><a href="#">중학교 참고서</a></li>
+                                <li><a href="#">고등학교 참고서</a></li>
+                                <li><a href="#">가정/요리/뷰티</a></li>
+                                <li><a href="#">건강/취미/레저</a></li>
+                                <li><a href="#">소설/시/희곡</a></li>
+                                <li><a href="#">장르소설</a></li>
+                                <li><a href="#">에세이</a></li>
+                                <li><a href="#">여행</a></li>
+                                <li><a href="#">만화</a></li>
+                                <li><a href="#">인문학</a></li>
+                                <li><a href="#">사회과학</a></li>
+                                <li><a href="#">역사</a></li>
+                                <li><a href="#">예술/대중문화</a></li>
+                                <li><a href="#">과학</a></li>
+                                <li><a href="#">경제/경영</a></li>
+                                <li><a href="#">자기계발</a></li>
+                                <li><a href="#">외국어</a></li>
+                                <li><a href="#">IT</a></li>
+                                <li><a href="#">대학교재</a></li>
+                                <li><a href="#">수험서/자격증</a></li>
+                                <li><a href="#">공무원 수험서</a></li>
+                                <li><a href="#">달력/기타</a></li>
+                                <li><a href="#">종교/역학/철학</a></li>
+                                <li><a href="#">잡지</a></li>
+                                </ul></div>
+                            </li>
+                            <li><a href="#">외국도서</a></li>
+                            <li><a href="#">EBOOK</a></li>
+                            <li><a href="#">알라딘 굿즈</a></li>
+                            <li><a href="#">온라인 중고샵</a></li>
+                            <li><a href="#">중고매장</a></li>
+                            <li><a href="#">커피</a></li>
+                            <li><a href="#">음반</a></li>
+                            <li><a href="#">DVD</a></li>
+                            <li><a href="#">북플/서재</a></li>
+                        </ul>
+                    </div>
+                    <!-- <p class="btn-close"><a href="#">닫기</a></p> -->
+                </div>
             </div>
         </header>
         <div id="container">
@@ -105,21 +101,21 @@
                     <div class="paged">
                         <div class="new-book">
                             <div>
-                                <a href="#">
+                                <a href="goods-page.html">
                                     <img src="images/201102_ad05.png" alt="책">
                                     <!-- <span></span>
                                     <span></span> -->
                                 </a>
                             </div>
                             <div>
-                                <a href="#">
+                                <a href="goods-page.html">
                                     <img src="images/201102_ad06.png" alt="책">
                                     <!-- <span></span>
                                     <span></span> -->
                                 </a>
                             </div>
                             <div>
-                                <a href="#">
+                                <a href="goods-page.html">
                                     <img src="images/201102_ad07.png" alt="책">
                                     <!-- <span></span>
                                     <span></span> -->
@@ -446,13 +442,13 @@
                     <div class="best-now">   
                         <ul>
                             <li><strong class="rank">1</strong><a href="#"><img src="images/8934986654_1.jpg" alt=""><p class="book-tit">어떻게 말해줘야 할까<span class="author-pub">김얀|미디어창비</span></p></a></li>
-                            <li><strong class="rank">2</strong><a href="#"><img src="images/8934986654_1.jpg" alt=""><p class="book-tit">트렌드코리아2021<span class="author-pub">김난도 외|미래의창</span></p></a></li>
-                            <li><strong class="rank">3</strong><a href="#"><img src="images/8934986654_1.jpg" alt=""><p class="book-tit">별뜨기에 관하여<span class="author-pub">이영도|황금가지</span></p></a></li>
-                            <li><strong class="rank">4</strong><a href="#"><img src="images/8934986654_1.jpg" alt=""><p class="book-tit">별뜨기에 관하여 <span class="author-pub">이영도|황금가지</span></p></a></li>
-                            <li><strong class="rank">5</strong><a href="#"><img src="images/8934986654_1.jpg" alt=""><p class="book-tit">어떻게 말해줘야 할까<span class="author-pub">김얀|미디어창비</span></p></a></li>
-                            <li><strong class="rank">6</strong><a href="#"><img src="images/8934986654_1.jpg" alt=""><p class="book-tit">트렌드코리아2021<span class="author-pub">김난도 외|미래의창</span></p></a></li>
+                            <li><strong class="rank">4</strong><a href="#"><img src="images/8934986654_1.jpg" alt=""><p class="book-tit">트렌드코리아2021<span class="author-pub">김난도 외|미래의창</span></p></a></li>
                             <li><strong class="rank">7</strong><a href="#"><img src="images/8934986654_1.jpg" alt=""><p class="book-tit">별뜨기에 관하여<span class="author-pub">이영도|황금가지</span></p></a></li>
-                            <li><strong class="rank">8</strong><a href="#"><img src="images/8934986654_1.jpg" alt=""><p class="book-tit">별뜨기에 관하여 <span class="author-pub">이영도|황금가지</span></p></a></li>
+                            <li><strong class="rank">2</strong><a href="#"><img src="images/8934986654_1.jpg" alt=""><p class="book-tit">별뜨기에 관하여 <span class="author-pub">이영도|황금가지</span></p></a></li>
+                            <li><strong class="rank">5</strong><a href="#"><img src="images/8934986654_1.jpg" alt=""><p class="book-tit">어떻게 말해줘야 할까<span class="author-pub">김얀|미디어창비</span></p></a></li>
+                            <li><strong class="rank">8</strong><a href="#"><img src="images/8934986654_1.jpg" alt=""><p class="book-tit">트렌드코리아2021<span class="author-pub">김난도 외|미래의창</span></p></a></li>
+                            <li><strong class="rank">3</strong><a href="#"><img src="images/8934986654_1.jpg" alt=""><p class="book-tit">별뜨기에 관하여<span class="author-pub">이영도|황금가지</span></p></a></li>
+                            <li><strong class="rank">6</strong><a href="#"><img src="images/8934986654_1.jpg" alt=""><p class="book-tit">별뜨기에 관하여 <span class="author-pub">이영도|황금가지</span></p></a></li>
                             <li><strong class="rank">9</strong><a href="#"><img src="images/8934986654_1.jpg" alt=""><p class="book-tit">별뜨기에 관하여 <span class="author-pub">이영도|황금가지</span></p></a></li>
                         </ul>
                     </div>
@@ -473,7 +469,7 @@
                         <ul>
                             <li><a href="#" onclick="return galleryChange(0)"><span>#저자와의 만남</span><img src="images/aladintv-author.png" alt=""></a></li>
                             <li><a href="#" onclick="return galleryChange(1)"><span>#책 추천</span><img src="images/aladintv-cat.png" alt=""></a></li>
-                            <li><a href="#" onclick="return galleryChange(2)"><span>#시작하는 북튜버를 위해</span><img src="images/aladintv-cover.png" alt=""></a></li>
+                            <li><a href="#" onclick="return galleryChange(2)"><span>#커버스토리</span><img src="images/aladintv-cover.png" alt=""></a></li>
                             <li><a href="#" onclick="return galleryChange(3)"><span>#추천 알라딘</span><img src="images/aladintv.png" alt=""></a></li>
                         </ul>
                     </div>
@@ -512,15 +508,6 @@
                             <li><a href="#">도서판매업자 서비스</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">출판사/판매자를 위한 안내</a>
-                        <ul>
-                            <li><a href="#">제휴&마케팅 안내</a></li>
-                            <li><a href="#">출판사/공급사 안내</a></li>
-                            <li><a href="#">광고 안내</a></li>
-                            <li><a href="#">판매자 매니저</a></li>
-                            <li><a href="#">학교/기업/기관 대량구매</a></li>
-                        </ul>
-                    </li>
                     <li><a href="#">가격&배송 만족</a>
                         <ul>
                             <li><a href="">2천원 추가 마일리지</a></li>
@@ -535,16 +522,6 @@
                         </ul>
                     </li>
                 </ul>
-                <div class="notice">
-                            <h3>공지사항</h3>
-                            <ul>
-                                <li><a href="#">·11월 신용카드 무이자할부 안내 2020-10-30</a></li>
-                                <li><a href="#">·11월 신용카드 무이자할부 안내 2020-10-30</a></li>
-                                <li><a href="#">·11월 신용카드 무이자할부 안내 2020-10-30</a></li>
-                            </ul>
-                            <button class="btn-notice-prev">이전</button>
-                            <button class="btn-notice-next">다음</button>
-                </div>
             </section>
         </div>
     <div id="bg-footer">
@@ -569,12 +546,9 @@
             <div class="footer-right">
                 <div class="call-center">
                     <p>고객센터 일반문의(발신자 부담) 1544-2514</p>
-                    <button>1:1 문의</button>
-                    <button>FAQ</button>
                 </div>
                 <div class="shop-center">
                     <p>중고샵/매장문의(해피콜) 02-364-8947</p>
-                    <button>중고매장 위치, 영업시간 안내</button>
                 </div>
             </div>
 

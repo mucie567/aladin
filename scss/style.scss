@@ -25,34 +25,17 @@ body {
   font: 14px/1.4 Malgun Gothic, '맑은고딕', AppleGothic, gulim, '굴림', dotum,
     '돋움', sans-serif;
 }
-#web-banner {
-  width: 100%;
-  height: 60px;
-  background-color: $mainColor-2;
-  ul {
-    li {
-      & ~ li {
-        display: none;
-      }
-      a {
-        img {
-          object-fit: cover;
-        }
-      }
-    }
-  }
-}
 
 #header {
   position: relative;
-  max-width: $width-1;
+  width: 100%;
   height: 120px;
-  margin: 0 auto;
+  margin: 10px auto 0;
   .header-top {
-    width: 100%;
+    max-width: $width-1;
+    margin: 0 auto 10px;
     height: 60px;
     line-height: 60px;
-    margin-bottom: 10px;
     .header-left {
       float: left;
       .logo {
@@ -85,13 +68,19 @@ body {
       }
     }
   }
-  .header-bot {
+  .header-bot-bg {
     width: 100%;
-    height: 60px;
+    background: $mainColor-1;
+  }
+  .header-bot {
+    max-width: $width-1;
+    height: 50px;
     line-height: 60;
+    margin: 0 auto;
     .util-menu {
       overflow: hidden;
       line-height: 45px;
+
       .all-menu.on {
         &.gnb-wrap {
           display: block;
@@ -101,28 +90,32 @@ body {
         float: left;
         margin-right: 20px;
         font-size: 20px;
-        color: $mainColor-1;
-        &:first-child {
-          width: 120px;
-          height: 50px;
-          line-height: 45px;
-          background-color: $mainColor-1;
-          color: #fff;
-          text-align: center;
-        }
+        color: #fff;
+        line-height: 50px;
+        height: 50px;
         a {
           img {
             width: 30px;
             height: 30px;
+          }
+          span {
+            margin-left: 10px;
+            line-height: 30px;
           }
         }
       }
     }
   }
 }
-#gnb-wrap {
+#gnb-scroll-wrap {
+  max-width: $width-1;
   position: relative;
-  top: -10px;
+  margin: 0 auto;
+}
+#gnb-wrap {
+  width: 100%;
+  position: absolute;
+  top: 0;
   left: 0;
   border: 1px solid $mainColor-1;
   background: #fff;
@@ -494,7 +487,7 @@ body {
     > ul {
       overflow: hidden;
       > li {
-        width: 20%;
+        width: 25%;
         display: block;
         float: left;
         text-align: center;
@@ -508,60 +501,9 @@ body {
         }
       }
     }
-    .notice {
-      max-width: 960px;
-      height: 60px;
-      margin: 0 auto;
-      line-height: 40px;
-      padding: 10px;
-      position: relative;
-      font-size: 16px;
-      h3 {
-        float: left;
-        &::after {
-          content: '';
-          display: block;
-          width: 1px;
-          height: 21px;
-          background-color: #000;
-          position: absolute;
-          top: 20px;
-          left: 81px;
-        }
-      }
-      ul {
-        float: left;
-        margin-left: 20px;
-        font-size: 14px;
-        li {
-          & ~ li {
-            display: none;
-          }
-        }
-      }
-      button {
-        position: absolute;
-        right: 0;
-        text-indent: -99999px;
-        width: 15px;
-        height: 15px;
-        border: none;
-      }
-      .btn-notice-prev {
-        top: 15px;
-        background: url('../images/btn_notice_1.png') no-repeat 0 0;
-        background-size: contain;
-      }
-      .btn-notice-next {
-        top: 30px;
-        background: url('../images/btn_notice_2.png') no-repeat 0 0;
-        background-size: contain;
-      }
-    }
   }
 }
 #bg-footer {
-  margin-top: 50px;
   width: 100%;
   background: $footerColor-1;
 }
@@ -570,6 +512,7 @@ body {
   margin: 0 auto;
   padding: 10px;
   overflow: hidden;
+  color: #fff;
   ul {
     text-align: center;
     margin-bottom: 20px;
@@ -583,5 +526,119 @@ body {
   }
   .footer-right {
     float: right;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 360px) {
+  #header {
+    .header-bot {
+      overflow-x: auto;
+      .util-menu {
+        li {
+          width: 10%;
+          text-align: center;
+          a {
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  #container {
+    .sec-1 {
+      .slide-banner-wrap {
+        .slide-banner-paging {
+          bottom: -215px;
+          li {
+            width: 50%;
+            border: none;
+            &:nth-child(2n) {
+              border-left: 1px solid #fff;
+            }
+
+            &:last-child {
+              width: 100%;
+              border-top: 1px solid #fff;
+              border-right: none;
+            }
+          }
+        }
+      }
+    }
+    .sec-2 {
+      margin-top: 250px;
+    }
+    .sec-4 {
+      padding-bottom: 50px;
+    }
+    .sec-5 {
+      display: none;
+    }
+  }
+  #footer {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 50%;
+        margin-left: 0;
+        padding: 10px;
+      }
+    }
+    .footer-left {
+      float: none;
+      text-align: center;
+      .company-info {
+        display: none;
+      }
+      address {
+        display: none;
+      }
+      .copyright {
+        display: block;
+        padding: 20px;
+      }
+    }
+    .footer-right {
+      display: none;
+    }
+  }
+}
+@media (max-width: 800px) and (min-width: 471px) {
+  #gnb-wrap {
+    .gnb {
+      > ul {
+        > li {
+          .sub-menu {
+            width: 200px;
+            .sub-menu-2 {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 470px) and (min-width: 360px) {
+  #gnb-wrap {
+    .gnb {
+      > ul {
+        &::after {
+          left: 173px;
+        }
+        > li {
+          .sub-menu {
+            width: 180px;
+            left: 168px;
+            .sub-menu-2 {
+              display: none;
+            }
+          }
+        }
+      }
+    }
   }
 }

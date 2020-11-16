@@ -118,11 +118,15 @@ body {
           position: relative;
           margin-bottom: 10px;
           width: 100%;
-          height: 38px;
+          height: 40px;
           font-size: 14px;
           background: #fff;
           border: 1px solid $boarderColor-1;
-          padding-left: 40px;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
         }
       }
     }
@@ -157,5 +161,18 @@ body {
   padding-top: 30px;
   .copyright {
     text-align: center;
+  }
+}
+
+@media (max-width: 930px) and (min-width: 360px) {
+  #login-container {
+    padding: 60px 0;
+  }
+  .login-content {
+    margin: auto;
+    float: none !important;
+  }
+  .ad-content {
+    display: none;
   }
 }
