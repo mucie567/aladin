@@ -47,14 +47,14 @@ body {
           position: relative;
           float: left;
           padding-right: 20px;
-          &.store {
-            a {
-              &.on {
-                + div {
-                  display: block;
-                }
+          a {
+            &.on {
+              + div {
+                display: block;
               }
             }
+          }
+          &.store {
             div {
               display: none;
               width: 500px;
@@ -92,6 +92,7 @@ body {
             left: 0;
             border: 1px solid #000;
             display: none;
+            color: $fontColor-1;
             > ul {
               li {
                 padding: 5px;

@@ -1,5 +1,30 @@
+$(function() {
+  utilFnc($('.siemap'))
+})
+
+function utilFnc(element) {
+  var util1 = element.find('>li>a')
+  var util1Site = element.find('>div')
 
 
+
+  var oldMenu = null;
+    util1.on('mouseover',function() {
+        if (oldMenu!=null) {
+            oldMenu.removeClass('on');
+        }
+       $(this).addClass('on'); 
+       util1Site.stop(true).slideDown(500);
+       oldMenu=$(this);
+    });
+    element.on('mouseleave',function() {
+      util1Site.stop(true).slideUp(100);
+
+        if (oldMenu!=null) {
+            oldMenu.removeClass('on');
+        }
+    })
+}
 
 
 
