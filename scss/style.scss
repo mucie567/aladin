@@ -57,7 +57,6 @@ body {
           &.store {
             div {
               display: none;
-              width: 500px;
               height: auto;
               overflow: hidden;
               color: $fontColor-1;
@@ -88,11 +87,13 @@ body {
           }
           > div {
             position: absolute;
+            width: auto;
             top: 30px;
             left: 0;
-            border: 1px solid #000;
+            border: 1px solid $mainColor-2;
             display: none;
             color: $fontColor-1;
+            white-space: nowrap;
             > ul {
               li {
                 padding: 5px;
