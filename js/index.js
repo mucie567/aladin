@@ -1,6 +1,7 @@
 $(function() {
   utilFnc($('.siemap'))
   gnbFnc($('.gnb-menu'))
+  subMenu($('.gnb'))
   })
 
 function utilFnc(element) {
@@ -49,7 +50,27 @@ function gnbFnc(element) {
     })
 }
 
+function subMenu(element) {
+    var sub1 = element.find('>li>a')
+    var subMenu = element.find('> div')
 
+    var oldMenu = null;
+    sub1.on('mouseover',function() {
+        if (oldMenu!=null) {
+            oldMenu.removeClass('on');
+        }
+       $(this).addClass('on'); 
+       subMenu.stop(true).slideDown(500);
+       oldMenu=$(this);
+    });
+    element.on('mouseleave',function() {
+        subMenu.stop(true).slideUp(100);
+
+        if (oldMenu!=null) {
+            oldMenu.removeClass('on');
+        }
+    })
+}
 
 
 

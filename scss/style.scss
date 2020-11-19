@@ -272,13 +272,19 @@ body {
                 background-color: $mainColor-1;
                 color: #fff;
               }
+              a {
+                &.on {
+                  + .sub-menu {
+                    display: block;
+                  }
+                }
+              }
             }
           }
           .sub-menu {
             display: none;
             position: absolute;
             width: 480px;
-            height: 611px;
             padding: 50px;
             top: -1px;
             left: 180px;
@@ -303,9 +309,6 @@ body {
                   font-size: 14px;
                 }
               }
-            }
-            .sub-menu-2 {
-              display: none;
             }
           }
         }
