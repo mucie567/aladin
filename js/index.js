@@ -1,6 +1,7 @@
 $(function() {
   utilFnc($('.siemap'))
-})
+  gnbFnc($('.gnb-menu'))
+  })
 
 function utilFnc(element) {
   var util1 = element.find('>li>a')
@@ -26,41 +27,42 @@ function utilFnc(element) {
     })
 }
 
+function gnbFnc(element) {
+    var gnb1 = element.find('>.all-menu>a')
+    var gnbMenu = element.find('>div')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function myFunction() {
-    document.getElementById("gnb-wrap").classList.toggle("on");
-    // document.getElementsByClassName(".btn-close").classList.add(".on");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("gnb-content");
-      var exit = document.getElementsByClassName("btn-close")
-      var i;
-      for (i = 0; i < exit.length; i++) {
-        var openDropdown = exit[i];
-         if (openDropdown.classList.contains('on')) {
-           dropdowns.classList.remove('on');
+    var oldMenu = null;
+    gnb1.on('mouseover',function() {
+        if (oldMenu!=null) {
+            oldMenu.removeClass('on');
         }
-      }
-    }
-  }
+       $(this).addClass('on'); 
+       gnbMenu.stop(true).slideDown(500);
+       oldMenu=$(this);
+    });
+    element.on('mouseleave',function() {
+        gnbMenu.stop(true).slideUp(100);
+
+        if (oldMenu!=null) {
+            oldMenu.removeClass('on');
+        }
+    })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
