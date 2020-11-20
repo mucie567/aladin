@@ -284,8 +284,9 @@ body {
           .sub-menu {
             display: none;
             position: absolute;
-            width: 480px;
-            padding: 50px;
+            width: 900px;
+            height: 428px;
+            padding: 50px 25px 50px 50px;
             top: -1px;
             left: 180px;
             border: 1px solid $mainColor-2;
@@ -301,10 +302,10 @@ body {
             ul {
               > li {
                 position: relative;
-                width: 50%;
+                width: 25%;
                 height: 20px;
                 float: left;
-                margin-bottom: 15px;
+                margin: 0 15px 15px 0;
                 a {
                   font-size: 14px;
                 }
