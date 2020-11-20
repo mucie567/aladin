@@ -2,7 +2,15 @@ $(function() {
   utilFnc($('.siemap'))
   gnbFnc($('.gnb-menu'))
   subMenu($('.gnb'))
-  })
+  $('.best-now').slick({
+    autoplay :true,
+    vertical :true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: false,
+    autoplaySpeed: 1000
+  });
+})
 
 function utilFnc(element) {
   var util1 = element.find('>li>a')
