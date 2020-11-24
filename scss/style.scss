@@ -480,9 +480,9 @@ body {
             }
             p {
               display: inline-block;
-              position: relative;
-              top: 10px;
-              left: 0;
+              position: absolute;
+              top: 16px;
+              left: 95px;
               font-weight: bold;
               text-align: center;
               span {
@@ -536,7 +536,18 @@ body {
     }
   }
   .sec-3 {
-    display: none;
+    width: 100%;
+    background-color: #f8f8f8;
+    h2 {
+      padding-top: 20px;
+    }
+    .aladin-ad-nov {
+      max-width: $width-1;
+      margin: 0 auto;
+      div {
+        padding: 20px 0 20px 45px;
+      }
+    }
   }
   .sec-4 {
     max-width: $width-1;

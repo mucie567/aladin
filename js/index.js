@@ -8,7 +8,15 @@ $(function() {
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: false,
+    nextArrow:false,
     autoplaySpeed: 1000
+  });
+  $('.aladin-ad-nov').slick({
+    autoplay :true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: false,
+    nextArrow: false,
   });
 })
 
